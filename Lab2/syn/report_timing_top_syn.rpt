@@ -1,0 +1,118 @@
+Information: Updating design information... (UID-85)
+Warning: Design 'top' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : top
+Version: O-2018.06
+Date   : Sat Oct 28 14:53:23 2023
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: WCCOM   Library: fsa0m_a_generic_core_ss1p62v125c
+Wire Load Model Mode: enclosed
+
+  Startpoint: cpu/controller/M_op_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: cpu/reg_exe_mem/mul_out_reg[14]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  top                enG1000K              fsa0m_a_generic_core_ss1p62v125c
+  Controller         enG5K                 fsa0m_a_generic_core_ss1p62v125c
+  CPU_wrapper        enG50K                fsa0m_a_generic_core_ss1p62v125c
+  Mux_3_2            enG5K                 fsa0m_a_generic_core_ss1p62v125c
+  Mux_3              enG5K                 fsa0m_a_generic_core_ss1p62v125c
+  Mul                enG30K                fsa0m_a_generic_core_ss1p62v125c
+  Mul_DW_mult_uns_1  enG30K                fsa0m_a_generic_core_ss1p62v125c
+  Reg_EXE_MEM        enG5K                 fsa0m_a_generic_core_ss1p62v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  cpu/controller/M_op_reg[2]/CK (QDFFRBP)                 0.00 #     1.00 r
+  cpu/controller/M_op_reg[2]/Q (QDFFRBP)                  0.44       1.44 f
+  cpu/controller/U26/O (BUF4CK)                           0.17       1.61 f
+  cpu/controller/U25/O (OAI112HT)                         0.21       1.82 r
+  cpu/controller/U24/O (INV4)                             0.06       1.88 f
+  cpu/controller/U82/O (OAI12HP)                          0.16       2.04 r
+  cpu/controller/U4/O (INV2)                              0.05       2.08 f
+  cpu/controller/U127/O (AN2T)                            0.21       2.29 f
+  cpu/controller/U106/O (ND2T)                            0.09       2.38 r
+  cpu/controller/U112/O (INV4)                            0.06       2.44 f
+  cpu/controller/U117/O (NR2F)                            0.13       2.57 r
+  cpu/controller/E_rs2_data_sel[1] (Controller)           0.00       2.57 r
+  cpu/mux_3_rs2/en[1] (Mux_3_2)                           0.00       2.57 r
+  cpu/mux_3_rs2/U32/O (INV8)                              0.07       2.64 f
+  cpu/mux_3_rs2/U120/O (ND2F)                             0.12       2.76 r
+  cpu/mux_3_rs2/U121/O (INV12)                            0.11       2.86 f
+  cpu/mux_3_rs2/U126/O (AO222P)                           0.56       3.43 f
+  cpu/mux_3_rs2/d[5] (Mux_3_2)                            0.00       3.43 f
+  cpu/mux_rs2_imm/a[5] (Mux_3)                            0.00       3.43 f
+  cpu/mux_rs2_imm/U10/O (ND2F)                            0.10       3.53 r
+  cpu/mux_rs2_imm/U32/O (ND2F)                            0.08       3.61 f
+  cpu/mux_rs2_imm/c[5] (Mux_3)                            0.00       3.61 f
+  cpu/mul/operand2[5] (Mul)                               0.00       3.61 f
+  cpu/mul/U85/O (ND2F)                                    0.11       3.72 r
+  cpu/mul/U32/O (INV8)                                    0.07       3.79 f
+  cpu/mul/mult_42/b[5] (Mul_DW_mult_uns_1)                0.00       3.79 f
+  cpu/mul/mult_42/U6350/O (BUF12CK)                       0.18       3.97 f
+  cpu/mul/mult_42/U3825/O (INV4CK)                        0.07       4.04 r
+  cpu/mul/mult_42/U5812/O (ND2F)                          0.07       4.12 f
+  cpu/mul/mult_42/U4279/O (ND2P)                          0.11       4.23 r
+  cpu/mul/mult_42/U5671/O (OR2T)                          0.18       4.40 r
+  cpu/mul/mult_42/U3046/O (ND2F)                          0.08       4.48 f
+  cpu/mul/mult_42/U1237/S (FA1)                           0.67       5.15 f
+  cpu/mul/mult_42/U3169/O (ND2T)                          0.16       5.31 r
+  cpu/mul/mult_42/U3314/O (ND3HT)                         0.15       5.46 f
+  cpu/mul/mult_42/U3211/O (ND2F)                          0.12       5.58 r
+  cpu/mul/mult_42/U5301/O (ND3P)                          0.14       5.72 f
+  cpu/mul/mult_42/U5155/O (ND2T)                          0.13       5.85 r
+  cpu/mul/mult_42/U4610/O (ND3HT)                         0.14       5.99 f
+  cpu/mul/mult_42/U4620/O (ND2T)                          0.10       6.10 r
+  cpu/mul/mult_42/U5658/O (ND3HT)                         0.15       6.25 f
+  cpu/mul/mult_42/U5655/O (ND2)                           0.19       6.44 r
+  cpu/mul/mult_42/U5657/O (ND3HT)                         0.20       6.64 f
+  cpu/mul/mult_42/U5332/O (XOR2HP)                        0.21       6.85 f
+  cpu/mul/mult_42/U2702/O (XOR2HT)                        0.19       7.03 f
+  cpu/mul/mult_42/U607/O (NR2F)                           0.18       7.22 r
+  cpu/mul/mult_42/U5823/O (OAI12HT)                       0.10       7.32 f
+  cpu/mul/mult_42/U3398/O (AOI12HT)                       0.20       7.52 r
+  cpu/mul/mult_42/U2876/O (OAI12HT)                       0.09       7.62 f
+  cpu/mul/mult_42/U524/O (AOI12HT)                        0.19       7.81 r
+  cpu/mul/mult_42/U4507/O (INV12)                         0.10       7.91 f
+  cpu/mul/mult_42/U2861/O (INV12CK)                       0.08       7.99 r
+  cpu/mul/mult_42/U5499/O (OA12P)                         0.22       8.20 r
+  cpu/mul/mult_42/U5416/O (XOR2H)                         0.16       8.37 r
+  cpu/mul/mult_42/product[46] (Mul_DW_mult_uns_1)         0.00       8.37 r
+  cpu/mul/U169/O (ND2F)                                   0.09       8.45 f
+  cpu/mul/U17/O (ND2F)                                    0.12       8.58 r
+  cpu/mul/mul_out[14] (Mul)                               0.00       8.58 r
+  cpu/reg_exe_mem/mul[14] (Reg_EXE_MEM)                   0.00       8.58 r
+  cpu/reg_exe_mem/U76/O (ND2P)                            0.07       8.64 f
+  cpu/reg_exe_mem/U57/O (ND2P)                            0.10       8.74 r
+  cpu/reg_exe_mem/mul_out_reg[14]/D (QDFFRBP)             0.00       8.74 r
+  data arrival time                                                  8.74
+
+  clock clk (rise edge)                                   8.00       8.00
+  clock network delay (ideal)                             1.00       9.00
+  clock uncertainty                                      -0.10       8.90
+  cpu/reg_exe_mem/mul_out_reg[14]/CK (QDFFRBP)            0.00       8.90 r
+  library setup time                                     -0.16       8.74
+  data required time                                                 8.74
+  --------------------------------------------------------------------------
+  data required time                                                 8.74
+  data arrival time                                                 -8.74
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1

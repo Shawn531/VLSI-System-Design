@@ -1,0 +1,32 @@
+Information: Updating graph... (UID-83)
+Warning: Design 'top' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+Information: Timing loop detected. (OPT-150)
+	axi_duv_bridge/BR/U336/I axi_duv_bridge/BR/U336/O axi_duv_bridge/BR/U208/I axi_duv_bridge/BR/U208/O axi_duv_bridge/BR/U459/A1 axi_duv_bridge/BR/U459/O DM1/U6/A DM1/U6/O DM1/SW/U95/A1 DM1/SW/U95/O DM1/SW/U94/I1 DM1/SW/U94/O axi_duv_bridge/BW/U232/I1 axi_duv_bridge/BW/U232/O axi_duv_bridge/BW/U233/A axi_duv_bridge/BW/U233/O axi_duv_bridge/BW/U157/I2 axi_duv_bridge/BW/U157/O axi_duv_bridge/BW/U5/I axi_duv_bridge/BW/U5/O axi_duv_bridge/BW/U93/I axi_duv_bridge/BW/U93/O axi_duv_bridge/BW/U6/B1 axi_duv_bridge/BW/U6/O DM1/U44/I DM1/U44/O DM1/U43/A2 DM1/U43/O DM1/SR/U24/B1 DM1/SR/U24/O axi_duv_bridge/BR/U110/I2 axi_duv_bridge/BR/U110/O axi_duv_bridge/BR/U435/A axi_duv_bridge/BR/U435/O axi_duv_bridge/BR/U132/I axi_duv_bridge/BR/U132/O axi_duv_bridge/BR/U276/I1 axi_duv_bridge/BR/U276/O 
+Information: Timing loop detected. (OPT-150)
+	DM1/SW/U95/B1 DM1/SW/U95/O DM1/SW/U94/I1 DM1/SW/U94/O axi_duv_bridge/BW/U232/I1 axi_duv_bridge/BW/U232/O axi_duv_bridge/BW/U233/A axi_duv_bridge/BW/U233/O axi_duv_bridge/BW/U157/I2 axi_duv_bridge/BW/U157/O axi_duv_bridge/BW/U5/I axi_duv_bridge/BW/U5/O axi_duv_bridge/BW/U93/I axi_duv_bridge/BW/U93/O axi_duv_bridge/BW/U6/B1 axi_duv_bridge/BW/U6/O DM1/U44/I DM1/U44/O DM1/U43/A2 DM1/U43/O 
+Warning: Disabling timing arc between pins 'I1' and 'O' on cell 'axi_duv_bridge/BR/U276'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'I2' and 'O' on cell 'axi_duv_bridge/BW/U157'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'I1' and 'O' on cell 'axi_duv_bridge/BR/U371'
+         to break a timing loop. (OPT-314)
+ 
+****************************************
+Report : clocks
+Design : top
+Version: O-2018.06
+Date   : Sat Oct 28 14:53:21 2023
+****************************************
+
+Attributes:
+    d - dont_touch_network
+    f - fix_hold
+    p - propagated_clock
+    G - generated_clock
+    g - lib_generated_clock
+
+Clock          Period   Waveform            Attrs     Sources
+--------------------------------------------------------------------------------
+clk              8.00   {0 4}               d f       {clk}
+--------------------------------------------------------------------------------
+1
