@@ -1,0 +1,189 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : top
+Version: O-2018.06
+Date   : Sat Nov 25 20:26:06 2023
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: WCCOM   Library: fsa0m_a_generic_core_ss1p62v125c
+Wire Load Model Mode: enclosed
+
+  Startpoint: cpu/reg_mem_wb/alu_out_out_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: cpu/reg_exe_mem/mul_out_reg[16]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  top                enG1000K              fsa0m_a_generic_core_ss1p62v125c
+  CPU_wrapper        enG50K                fsa0m_a_generic_core_ss1p62v125c
+  LD_Filter          enG5K                 fsa0m_a_generic_core_ss1p62v125c
+  Mux_2              enG5K                 fsa0m_a_generic_core_ss1p62v125c
+  Mul                enG10K                fsa0m_a_generic_core_ss1p62v125c
+  Mul_DW_mult_uns_1  enG10K                fsa0m_a_generic_core_ss1p62v125c
+  Reg_EXE_MEM        enG5K                 fsa0m_a_generic_core_ss1p62v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  cpu/reg_mem_wb/alu_out_out_reg[0]/CK (DFCLRBN)          0.00 #     1.00 r
+  cpu/reg_mem_wb/alu_out_out_reg[0]/Q (DFCLRBN)           0.47       1.47 r
+  cpu/reg_mem_wb/alu_out_out[0] (Reg_MEM_WB)              0.00       1.47 r
+  cpu/ld_filter/W_lasttwo[0] (LD_Filter)                  0.00       1.47 r
+  cpu/ld_filter/U25/O (INV2)                              0.13       1.60 f
+  cpu/ld_filter/U71/O (ND2P)                              0.26       1.86 r
+  cpu/ld_filter/U50/O (INV2)                              0.09       1.95 f
+  cpu/ld_filter/U41/O (ND2P)                              0.15       2.10 r
+  cpu/ld_filter/U68/O (OAI112HP)                          0.16       2.26 f
+  cpu/ld_filter/U13/O (INV6CK)                            0.07       2.33 r
+  cpu/ld_filter/U12/O (OAI12HP)                           0.09       2.42 f
+  cpu/ld_filter/U16/O (ND2F)                              0.10       2.51 r
+  cpu/ld_filter/U15/O (OAI22HT)                           0.14       2.65 f
+  cpu/ld_filter/U5/O (INV12)                              0.11       2.76 r
+  cpu/ld_filter/U3/O (ND2F)                               0.10       2.86 f
+  cpu/ld_filter/U70/O (INV12CK)                           0.11       2.97 r
+  cpu/ld_filter/U113/O (OAI12HS)                          0.12       3.09 f
+  cpu/ld_filter/ld_data_f[19] (LD_Filter)                 0.00       3.09 f
+  cpu/mux_ld_alu/a[19] (Mux_0)                            0.00       3.09 f
+  cpu/mux_ld_alu/U17/O (MUX2)                             0.34       3.42 f
+  cpu/mux_ld_alu/c[19] (Mux_0)                            0.00       3.42 f
+  cpu/mux_3_rs2/a[19] (Mux_3_1)                           0.00       3.42 f
+  cpu/mux_3_rs2/U16/O (AO222P)                            0.49       3.91 f
+  cpu/mux_3_rs2/d[19] (Mux_3_1)                           0.00       3.91 f
+  cpu/mux_rs2_imm/a[19] (Mux_2)                           0.00       3.91 f
+  cpu/mux_rs2_imm/U29/OB (MXL2HS)                         0.21       4.12 r
+  cpu/mux_rs2_imm/U28/O (INV3)                            0.20       4.32 f
+  cpu/mux_rs2_imm/c[19] (Mux_2)                           0.00       4.32 f
+  cpu/mul/operand2[19] (Mul)                              0.00       4.32 f
+  cpu/mul/U4/O (AN2T)                                     0.28       4.60 f
+  cpu/mul/mult_42/b[19] (Mul_DW_mult_uns_1)               0.00       4.60 f
+  cpu/mul/mult_42/U2938/O (INV6CK)                        0.10       4.70 r
+  cpu/mul/mult_42/U2937/O (INV12)                         0.08       4.78 f
+  cpu/mul/mult_42/U2924/O (XNR2HT)                        0.18       4.96 f
+  cpu/mul/mult_42/U4945/O (BUF12CK)                       0.19       5.15 f
+  cpu/mul/mult_42/U2661/O (ND2F)                          0.14       5.29 r
+  cpu/mul/mult_42/U3569/O (BUF12CK)                       0.23       5.52 r
+  cpu/mul/mult_42/U4245/O (OAI22S)                        0.14       5.67 f
+  cpu/mul/mult_42/U3160/CO (FA1S)                         0.56       6.23 f
+  cpu/mul/mult_42/U1275/S (FA1)                           0.68       6.91 f
+  cpu/mul/mult_42/U1272/CO (FA1)                          0.40       7.30 f
+  cpu/mul/mult_42/U1258/S (FA1)                           0.70       8.01 f
+  cpu/mul/mult_42/U2758/O (XOR2HS)                        0.25       8.25 f
+  cpu/mul/mult_42/U2759/O (XOR2HS)                        0.21       8.46 f
+  cpu/mul/mult_42/U2764/O (OR2P)                          0.30       8.76 f
+  cpu/mul/mult_42/U2847/O (AOI12H)                        0.17       8.93 r
+  cpu/mul/mult_42/U3319/O (OAI12H)                        0.13       9.06 f
+  cpu/mul/mult_42/U3318/O (AOI12HP)                       0.19       9.25 r
+  cpu/mul/mult_42/U2971/O (OAI12HP)                       0.15       9.40 f
+  cpu/mul/mult_42/U3543/O (AOI12HT)                       0.18       9.58 r
+  cpu/mul/mult_42/U3407/O (BUF8)                          0.20       9.77 r
+  cpu/mul/mult_42/U3941/O (OAI12H)                        0.09       9.86 f
+  cpu/mul/mult_42/U3939/O (XNR2HS)                        0.16      10.02 f
+  cpu/mul/mult_42/product[48] (Mul_DW_mult_uns_1)         0.00      10.02 f
+  cpu/mul/U112/O (MUX2)                                   0.29      10.31 f
+  cpu/mul/mul_out[16] (Mul)                               0.00      10.31 f
+  cpu/reg_exe_mem/mul[16] (Reg_EXE_MEM)                   0.00      10.31 f
+  cpu/reg_exe_mem/mul_out_reg[16]/U4/O (MUX2)             0.27      10.59 f
+  cpu/reg_exe_mem/U6/O (AN2)                              0.23      10.81 f
+  cpu/reg_exe_mem/mul_out_reg[16]/D (DFFP)                0.00      10.81 f
+  data arrival time                                                 10.81
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             1.00      11.00
+  clock uncertainty                                      -0.10      10.90
+  cpu/reg_exe_mem/mul_out_reg[16]/CK (DFFP)               0.00      10.90 r
+  library setup time                                     -0.09      10.81
+  data required time                                                10.81
+  --------------------------------------------------------------------------
+  data required time                                                10.81
+  data arrival time                                                -10.81
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: WDT/wdt/WTOCNT_reg_reg[1]
+              (rising edge-triggered flip-flop clocked by clk2)
+  Endpoint: WDT/wdt/count_reg[0]
+            (rising edge-triggered flip-flop clocked by clk2)
+  Path Group: clk2
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  top                enG1000K              fsa0m_a_generic_core_ss1p62v125c
+  WDT                enG5K                 fsa0m_a_generic_core_ss1p62v125c
+  WDT_DW01_cmp2_0    enG5K                 fsa0m_a_generic_core_ss1p62v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk2 (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  WDT/wdt/WTOCNT_reg_reg[1]/CK (DFCRBN)                   0.00       1.00 r
+  WDT/wdt/WTOCNT_reg_reg[1]/Q (DFCRBN)                    0.38       1.38 f
+  WDT/wdt/r300/A[1] (WDT_DW01_cmp2_0)                     0.00       1.38 f
+  WDT/wdt/r300/U16/O (INV1S)                              0.10       1.48 r
+  WDT/wdt/r300/U66/O (AN2)                                0.21       1.69 r
+  WDT/wdt/r300/U65/O (NR2)                                0.07       1.75 f
+  WDT/wdt/r300/U64/O (MOAI1S)                             0.28       2.03 f
+  WDT/wdt/r300/U63/O (OA222)                              0.31       2.34 f
+  WDT/wdt/r300/U62/O (AO12)                               0.31       2.65 f
+  WDT/wdt/r300/U61/O (OA222)                              0.28       2.93 f
+  WDT/wdt/r300/U60/O (AO12)                               0.31       3.25 f
+  WDT/wdt/r300/U59/O (OA222)                              0.28       3.53 f
+  WDT/wdt/r300/U58/O (AO12)                               0.31       3.84 f
+  WDT/wdt/r300/U57/O (OA222)                              0.28       4.12 f
+  WDT/wdt/r300/U56/O (AO12)                               0.31       4.44 f
+  WDT/wdt/r300/U55/O (OA222)                              0.28       4.72 f
+  WDT/wdt/r300/U54/O (AO12)                               0.31       5.03 f
+  WDT/wdt/r300/U53/O (OA222)                              0.28       5.31 f
+  WDT/wdt/r300/U52/O (AO12)                               0.31       5.63 f
+  WDT/wdt/r300/U51/O (OA222)                              0.28       5.91 f
+  WDT/wdt/r300/U50/O (AO12)                               0.31       6.22 f
+  WDT/wdt/r300/U49/O (OA222)                              0.28       6.51 f
+  WDT/wdt/r300/U48/O (AO12)                               0.31       6.82 f
+  WDT/wdt/r300/U47/O (OA222)                              0.28       7.10 f
+  WDT/wdt/r300/U46/O (AO12)                               0.31       7.42 f
+  WDT/wdt/r300/U45/O (OA222)                              0.28       7.70 f
+  WDT/wdt/r300/U44/O (AO12)                               0.31       8.01 f
+  WDT/wdt/r300/U43/O (OA222)                              0.28       8.29 f
+  WDT/wdt/r300/U42/O (AO12)                               0.31       8.61 f
+  WDT/wdt/r300/U41/O (OA222)                              0.28       8.89 f
+  WDT/wdt/r300/U40/O (AO12)                               0.31       9.20 f
+  WDT/wdt/r300/U39/O (OA222)                              0.28       9.48 f
+  WDT/wdt/r300/U38/O (AO12)                               0.31       9.80 f
+  WDT/wdt/r300/U37/O (OA222)                              0.28      10.08 f
+  WDT/wdt/r300/U36/O (AO12)                               0.32      10.40 f
+  WDT/wdt/r300/U35/O (OAI22S)                             0.13      10.53 r
+  WDT/wdt/r300/U33/O (MOAI1S)                             0.33      10.86 r
+  WDT/wdt/r300/U32/O (INV1S)                              0.15      11.01 f
+  WDT/wdt/r300/GE_GT (WDT_DW01_cmp2_0)                    0.00      11.01 f
+  WDT/wdt/U74/O (OR3B2)                                   0.15      11.16 r
+  WDT/wdt/U78/O (BUF1CK)                                  0.21      11.37 r
+  WDT/wdt/U5/O (BUF1CK)                                   0.38      11.76 r
+  WDT/wdt/U15/O (MOAI1S)                                  0.24      11.99 f
+  WDT/wdt/count_reg[0]/D (QDFFN)                          0.00      11.99 f
+  data arrival time                                                 11.99
+
+  clock clk2 (rise edge)                                100.00     100.00
+  clock network delay (ideal)                             1.00     101.00
+  clock uncertainty                                      -0.10     100.90
+  WDT/wdt/count_reg[0]/CK (QDFFN)                         0.00     100.90 r
+  library setup time                                     -0.15     100.75
+  data required time                                               100.75
+  --------------------------------------------------------------------------
+  data required time                                               100.75
+  data arrival time                                                -11.99
+  --------------------------------------------------------------------------
+  slack (MET)                                                       88.75
+
+
+1
