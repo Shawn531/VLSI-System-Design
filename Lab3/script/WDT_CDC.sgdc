@@ -1,0 +1,19 @@
+#modify clk period & edge{0 half clk period}, do not modify clk2
+current_design "WDT"
+clock -name "WDT.clk" -domain clk -tag clk -period 11 -edge {0 5.5}
+clock -name "WDT.clk2" -domain clk2 -tag clk2 -period 100 -edge {0 50}
+reset -name "WDT.rst" -value 1 -sync
+reset -name "WDT.rst2" -value 1 -sync
+
+#define_tag -tag initState -name WDT.sensor_W.CDC_synch1 -value 0
+#define_tag -tag initState -name WDT.sensor_W.CDC_synch2 -value 0
+
+#fifo -memory "afifo_mem" -rd_data "afifo_rdata" -wr_data "afifo_wdata" -rd_ptr "afifo_raddr" -wr_ptr "afifo_waddr"
+
+#define_tag -tag initSeq -name WDT.rst -value 1 1 1 0 0 0
+#define_tag -tag initSeq -name WDT.rst2 -value 1 1 1 0 0 0
+#abstract_port -ports rst -clock clk -reset rst
+#abstract_port -ports rst2 -clock clk2 -reset rst2
+#quasi_static -name "WDT.rst" -value 0
+#quasi_static -name "WDT.rst2" -value 0
+waive -rule Ar_syncrst_setupcheck01
