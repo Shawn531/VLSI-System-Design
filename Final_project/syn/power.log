@@ -1,0 +1,974 @@
+Loading db file '/usr/cad/CBDK/CBDK018_UMC_Faraday_v1.0/orig_lib/fsa0m_a/2009Q2v2.0/GENERIC_CORE/FrontEnd/synopsys/fsa0m_a_generic_core_ss1p62v125c.db'
+Loading db file '/home/user2/vsd23/vsd2382/TOP_APRNEW/sim/SRAM/SRAM_WC.db'
+Loading db file '/home/user2/vsd23/vsd2382/TOP_APRNEW/sim/INPUT_SRAM/INPUT_SRAM_WC.db'
+Loading db file '/home/user2/vsd23/vsd2382/TOP_APRNEW/sim/data_array/data_array_WC.db'
+Loading db file '/home/user2/vsd23/vsd2382/TOP_APRNEW/sim/tag_array/tag_array_WC.db'
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+Warning: Design has unannotated black box outputs. (PWR-428)
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : top
+Version: O-2018.06
+Date   : Wed Jan 10 00:11:57 2024
+****************************************
+
+
+Library(s) Used:
+
+    fsa0m_a_generic_core_ss1p62v125c (File: /usr/cad/CBDK/CBDK018_UMC_Faraday_v1.0/orig_lib/fsa0m_a/2009Q2v2.0/GENERIC_CORE/FrontEnd/synopsys/fsa0m_a_generic_core_ss1p62v125c.db)
+    SRAM_WC (File: /home/user2/vsd23/vsd2382/TOP_APRNEW/sim/SRAM/SRAM_WC.db)
+    INPUT_SRAM_WC (File: /home/user2/vsd23/vsd2382/TOP_APRNEW/sim/INPUT_SRAM/INPUT_SRAM_WC.db)
+    tag_array_WC (File: /home/user2/vsd23/vsd2382/TOP_APRNEW/sim/tag_array/tag_array_WC.db)
+    data_array_WC (File: /home/user2/vsd23/vsd2382/TOP_APRNEW/sim/data_array/data_array_WC.db)
+
+
+Operating Conditions: WCCOM   Library: fsa0m_a_generic_core_ss1p62v125c
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+top                    enG2000K          fsa0m_a_generic_core_ss1p62v125c
+AFIFO_Tx_DATA_WIDTH45_ADDR_WIDTH4_2
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+AFIFO_Rx_DATA_WIDTH45_ADDR_WIDTH4_2
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+AFIFO_Tx_DATA_WIDTH43_ADDR_WIDTH4_8
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+AFIFO_Rx_DATA_WIDTH43_ADDR_WIDTH4_8
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+AFIFO_Tx_DATA_WIDTH37_ADDR_WIDTH4_6
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+AFIFO_Rx_DATA_WIDTH37_ADDR_WIDTH4_6
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+AFIFO_Tx_DATA_WIDTH6_ADDR_WIDTH4
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+AFIFO_Rx_DATA_WIDTH6_ADDR_WIDTH4
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+AFIFO_Tx_DATA_WIDTH39_ADDR_WIDTH4
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+AFIFO_Rx_DATA_WIDTH39_ADDR_WIDTH4
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+AFIFO_Tx_DATA_WIDTH49_ADDR_WIDTH4_14
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+AFIFO_Rx_DATA_WIDTH49_ADDR_WIDTH4_14
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+AFIFO_Tx_DATA_WIDTH10_ADDR_WIDTH4_6
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+AFIFO_Rx_DATA_WIDTH10_ADDR_WIDTH4_6
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+AFIFO_Tx_DATA_WIDTH37_ADDR_WIDTH5
+                       enG10K            fsa0m_a_generic_core_ss1p62v125c
+AFIFO_Rx_DATA_WIDTH37_ADDR_WIDTH5
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+CPU_wrapper            enG200K           fsa0m_a_generic_core_ss1p62v125c
+DMA_wrapper            enG30K            fsa0m_a_generic_core_ss1p62v125c
+Master_Monitor_3       enG5K             fsa0m_a_generic_core_ss1p62v125c
+SRAM_wrapper_1         enG500K           fsa0m_a_generic_core_ss1p62v125c
+Sensor_Wrapper         enG5K             fsa0m_a_generic_core_ss1p62v125c
+WDT_Wrapper            enG5K             fsa0m_a_generic_core_ss1p62v125c
+WDT                    enG5K             fsa0m_a_generic_core_ss1p62v125c
+DRAM_Wrapper           enG5K             fsa0m_a_generic_core_ss1p62v125c
+EPU_Wrapper            enG1000K          fsa0m_a_generic_core_ss1p62v125c
+AXI                    enG10K            fsa0m_a_generic_core_ss1p62v125c
+Vector_SYNC_DATA_WIDTH4_SYNC_STAGE2_85
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+Vector_SYNC_DATA_WIDTH5_SYNC_STAGE2_1
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+CPU                    enG50K            fsa0m_a_generic_core_ss1p62v125c
+L1C_inst               enG50K            fsa0m_a_generic_core_ss1p62v125c
+Master_Read_1          enG5K             fsa0m_a_generic_core_ss1p62v125c
+L1C_data               enG50K            fsa0m_a_generic_core_ss1p62v125c
+Master_Write           enG5K             fsa0m_a_generic_core_ss1p62v125c
+DMA_controller         enG5K             fsa0m_a_generic_core_ss1p62v125c
+Slave_Write            enG5K             fsa0m_a_generic_core_ss1p62v125c
+Master_Read1           enG5K             fsa0m_a_generic_core_ss1p62v125c
+sync_fifo_DATA_WIDTH32_FIFO_DEPTH16
+                       enG10K            fsa0m_a_generic_core_ss1p62v125c
+Master_Write1          enG5K             fsa0m_a_generic_core_ss1p62v125c
+in_SRAM_Wrapper_epu    enG200K           fsa0m_a_generic_core_ss1p62v125c
+EPU                    enG200K           fsa0m_a_generic_core_ss1p62v125c
+out_SRAM_Wrapper_epu   enG500K           fsa0m_a_generic_core_ss1p62v125c
+Controller             enG5K             fsa0m_a_generic_core_ss1p62v125c
+BPU                    enG5K             fsa0m_a_generic_core_ss1p62v125c
+Mux_7                  enG5K             fsa0m_a_generic_core_ss1p62v125c
+Reg_PC                 enG5K             fsa0m_a_generic_core_ss1p62v125c
+Reg_IF_ID              enG5K             fsa0m_a_generic_core_ss1p62v125c
+MUX_fordelay           enG5K             fsa0m_a_generic_core_ss1p62v125c
+Decoder                enG5K             fsa0m_a_generic_core_ss1p62v125c
+Imm_Ext                enG5K             fsa0m_a_generic_core_ss1p62v125c
+RegFile                enG30K            fsa0m_a_generic_core_ss1p62v125c
+Reg_ID_EXE             enG5K             fsa0m_a_generic_core_ss1p62v125c
+INTR_CONTROLLER        enG5K             fsa0m_a_generic_core_ss1p62v125c
+Mux_3_1                enG5K             fsa0m_a_generic_core_ss1p62v125c
+ALU                    enG5K             fsa0m_a_generic_core_ss1p62v125c
+Mul                    enG10K            fsa0m_a_generic_core_ss1p62v125c
+Div                    enG5K             fsa0m_a_generic_core_ss1p62v125c
+JB_Unit                enG5K             fsa0m_a_generic_core_ss1p62v125c
+CSR                    enG5K             fsa0m_a_generic_core_ss1p62v125c
+Reg_EXE_MEM            enG5K             fsa0m_a_generic_core_ss1p62v125c
+wen_shift              enG5K             fsa0m_a_generic_core_ss1p62v125c
+Reg_MEM_WB             enG5K             fsa0m_a_generic_core_ss1p62v125c
+LD_Filter              enG5K             fsa0m_a_generic_core_ss1p62v125c
+data_array_wrapper_1   enG50K            fsa0m_a_generic_core_ss1p62v125c
+tag_array_wrapper_1    enG10K            fsa0m_a_generic_core_ss1p62v125c
+Master_Monitor_epu     enG5K             fsa0m_a_generic_core_ss1p62v125c
+EPU_ALG                enG200K           fsa0m_a_generic_core_ss1p62v125c
+div_rill_N32           enG5K             fsa0m_a_generic_core_ss1p62v125c
+toYCrCb_data_num4      enG10K            fsa0m_a_generic_core_ss1p62v125c
+ycrcb_mem              enG10K            fsa0m_a_generic_core_ss1p62v125c
+DCT                    enG100K           fsa0m_a_generic_core_ss1p62v125c
+mul_matrix_Z14         enG50K            fsa0m_a_generic_core_ss1p62v125c
+zigzag_N12             enG5K             fsa0m_a_generic_core_ss1p62v125c
+RLE_N12                enG5K             fsa0m_a_generic_core_ss1p62v125c
+DPCM_Y                 enG5K             fsa0m_a_generic_core_ss1p62v125c
+DPCM_Cr                enG5K             fsa0m_a_generic_core_ss1p62v125c
+DPCM_Cb                enG5K             fsa0m_a_generic_core_ss1p62v125c
+H_FF                   enG50K            fsa0m_a_generic_core_ss1p62v125c
+H_encoder              enG50K            fsa0m_a_generic_core_ss1p62v125c
+FF_SRAM                enG5K             fsa0m_a_generic_core_ss1p62v125c
+AC_coe_table           enG5K             fsa0m_a_generic_core_ss1p62v125c
+H_table                enG5K             fsa0m_a_generic_core_ss1p62v125c
+concatenater           enG5K             fsa0m_a_generic_core_ss1p62v125c
+FIFO_shift             enG50K            fsa0m_a_generic_core_ss1p62v125c
+H_light_table          enG5K             fsa0m_a_generic_core_ss1p62v125c
+H_color_table          enG5K             fsa0m_a_generic_core_ss1p62v125c
+FIFO                   enG30K            fsa0m_a_generic_core_ss1p62v125c
+collect_bits           enG5K             fsa0m_a_generic_core_ss1p62v125c
+AFIFO_Tx_DATA_WIDTH45_ADDR_WIDTH4_0
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+AFIFO_Tx_DATA_WIDTH45_ADDR_WIDTH4_1
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+AFIFO_Rx_DATA_WIDTH45_ADDR_WIDTH4_0
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+AFIFO_Rx_DATA_WIDTH45_ADDR_WIDTH4_1
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+AFIFO_Tx_DATA_WIDTH43_ADDR_WIDTH4_0
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+AFIFO_Tx_DATA_WIDTH43_ADDR_WIDTH4_1
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+AFIFO_Tx_DATA_WIDTH43_ADDR_WIDTH4_2
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+AFIFO_Tx_DATA_WIDTH43_ADDR_WIDTH4_3
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+AFIFO_Tx_DATA_WIDTH43_ADDR_WIDTH4_4
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+AFIFO_Tx_DATA_WIDTH43_ADDR_WIDTH4_5
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+AFIFO_Tx_DATA_WIDTH43_ADDR_WIDTH4_6
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+AFIFO_Tx_DATA_WIDTH43_ADDR_WIDTH4_7
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+AFIFO_Rx_DATA_WIDTH43_ADDR_WIDTH4_0
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+AFIFO_Rx_DATA_WIDTH43_ADDR_WIDTH4_1
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+AFIFO_Rx_DATA_WIDTH43_ADDR_WIDTH4_2
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+AFIFO_Rx_DATA_WIDTH43_ADDR_WIDTH4_3
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+AFIFO_Rx_DATA_WIDTH43_ADDR_WIDTH4_4
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+AFIFO_Rx_DATA_WIDTH43_ADDR_WIDTH4_5
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+AFIFO_Rx_DATA_WIDTH43_ADDR_WIDTH4_6
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+AFIFO_Rx_DATA_WIDTH43_ADDR_WIDTH4_7
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+AFIFO_Tx_DATA_WIDTH37_ADDR_WIDTH4_0
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+AFIFO_Tx_DATA_WIDTH37_ADDR_WIDTH4_1
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+AFIFO_Tx_DATA_WIDTH37_ADDR_WIDTH4_2
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+AFIFO_Tx_DATA_WIDTH37_ADDR_WIDTH4_3
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+AFIFO_Tx_DATA_WIDTH37_ADDR_WIDTH4_4
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+AFIFO_Tx_DATA_WIDTH37_ADDR_WIDTH4_5
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+AFIFO_Rx_DATA_WIDTH37_ADDR_WIDTH4_0
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+AFIFO_Rx_DATA_WIDTH37_ADDR_WIDTH4_1
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+AFIFO_Rx_DATA_WIDTH37_ADDR_WIDTH4_2
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+AFIFO_Rx_DATA_WIDTH37_ADDR_WIDTH4_3
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+AFIFO_Rx_DATA_WIDTH37_ADDR_WIDTH4_4
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+AFIFO_Rx_DATA_WIDTH37_ADDR_WIDTH4_5
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+AFIFO_Tx_DATA_WIDTH49_ADDR_WIDTH4_0
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+AFIFO_Tx_DATA_WIDTH49_ADDR_WIDTH4_1
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+AFIFO_Tx_DATA_WIDTH49_ADDR_WIDTH4_2
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+AFIFO_Tx_DATA_WIDTH49_ADDR_WIDTH4_3
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+AFIFO_Tx_DATA_WIDTH49_ADDR_WIDTH4_4
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+AFIFO_Tx_DATA_WIDTH49_ADDR_WIDTH4_5
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+AFIFO_Tx_DATA_WIDTH49_ADDR_WIDTH4_6
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+AFIFO_Tx_DATA_WIDTH49_ADDR_WIDTH4_7
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+AFIFO_Tx_DATA_WIDTH49_ADDR_WIDTH4_8
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+AFIFO_Tx_DATA_WIDTH49_ADDR_WIDTH4_9
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+AFIFO_Tx_DATA_WIDTH49_ADDR_WIDTH4_10
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+AFIFO_Tx_DATA_WIDTH49_ADDR_WIDTH4_11
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+AFIFO_Tx_DATA_WIDTH49_ADDR_WIDTH4_12
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+AFIFO_Tx_DATA_WIDTH49_ADDR_WIDTH4_13
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+AFIFO_Rx_DATA_WIDTH49_ADDR_WIDTH4_0
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+AFIFO_Rx_DATA_WIDTH49_ADDR_WIDTH4_1
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+AFIFO_Rx_DATA_WIDTH49_ADDR_WIDTH4_2
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+AFIFO_Rx_DATA_WIDTH49_ADDR_WIDTH4_3
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+AFIFO_Rx_DATA_WIDTH49_ADDR_WIDTH4_4
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+AFIFO_Rx_DATA_WIDTH49_ADDR_WIDTH4_5
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+AFIFO_Rx_DATA_WIDTH49_ADDR_WIDTH4_6
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+AFIFO_Rx_DATA_WIDTH49_ADDR_WIDTH4_7
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+AFIFO_Rx_DATA_WIDTH49_ADDR_WIDTH4_8
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+AFIFO_Rx_DATA_WIDTH49_ADDR_WIDTH4_9
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+AFIFO_Rx_DATA_WIDTH49_ADDR_WIDTH4_10
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+AFIFO_Rx_DATA_WIDTH49_ADDR_WIDTH4_11
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+AFIFO_Rx_DATA_WIDTH49_ADDR_WIDTH4_12
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+AFIFO_Rx_DATA_WIDTH49_ADDR_WIDTH4_13
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+AFIFO_Tx_DATA_WIDTH10_ADDR_WIDTH4_0
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+AFIFO_Tx_DATA_WIDTH10_ADDR_WIDTH4_1
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+AFIFO_Tx_DATA_WIDTH10_ADDR_WIDTH4_2
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+AFIFO_Tx_DATA_WIDTH10_ADDR_WIDTH4_3
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+AFIFO_Tx_DATA_WIDTH10_ADDR_WIDTH4_4
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+AFIFO_Tx_DATA_WIDTH10_ADDR_WIDTH4_5
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+AFIFO_Rx_DATA_WIDTH10_ADDR_WIDTH4_0
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+AFIFO_Rx_DATA_WIDTH10_ADDR_WIDTH4_1
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+AFIFO_Rx_DATA_WIDTH10_ADDR_WIDTH4_2
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+AFIFO_Rx_DATA_WIDTH10_ADDR_WIDTH4_3
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+AFIFO_Rx_DATA_WIDTH10_ADDR_WIDTH4_4
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+AFIFO_Rx_DATA_WIDTH10_ADDR_WIDTH4_5
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+Master_Monitor_0       enG5K             fsa0m_a_generic_core_ss1p62v125c
+Master_Monitor_1       enG5K             fsa0m_a_generic_core_ss1p62v125c
+Master_Monitor_2       enG5K             fsa0m_a_generic_core_ss1p62v125c
+SRAM_wrapper_0         enG500K           fsa0m_a_generic_core_ss1p62v125c
+Vector_SYNC_DATA_WIDTH4_SYNC_STAGE2_0
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+Vector_SYNC_DATA_WIDTH4_SYNC_STAGE2_1
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+Vector_SYNC_DATA_WIDTH4_SYNC_STAGE2_2
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+Vector_SYNC_DATA_WIDTH4_SYNC_STAGE2_3
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+Vector_SYNC_DATA_WIDTH4_SYNC_STAGE2_4
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+Vector_SYNC_DATA_WIDTH4_SYNC_STAGE2_5
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+Vector_SYNC_DATA_WIDTH4_SYNC_STAGE2_6
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+Vector_SYNC_DATA_WIDTH4_SYNC_STAGE2_7
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+Vector_SYNC_DATA_WIDTH4_SYNC_STAGE2_8
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+Vector_SYNC_DATA_WIDTH4_SYNC_STAGE2_9
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+Vector_SYNC_DATA_WIDTH4_SYNC_STAGE2_10
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+Vector_SYNC_DATA_WIDTH4_SYNC_STAGE2_11
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+Vector_SYNC_DATA_WIDTH4_SYNC_STAGE2_12
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+Vector_SYNC_DATA_WIDTH4_SYNC_STAGE2_13
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+Vector_SYNC_DATA_WIDTH4_SYNC_STAGE2_14
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+Vector_SYNC_DATA_WIDTH4_SYNC_STAGE2_15
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+Vector_SYNC_DATA_WIDTH4_SYNC_STAGE2_16
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+Vector_SYNC_DATA_WIDTH4_SYNC_STAGE2_17
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+Vector_SYNC_DATA_WIDTH4_SYNC_STAGE2_18
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+Vector_SYNC_DATA_WIDTH4_SYNC_STAGE2_19
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+Vector_SYNC_DATA_WIDTH4_SYNC_STAGE2_20
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+Vector_SYNC_DATA_WIDTH4_SYNC_STAGE2_21
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+Vector_SYNC_DATA_WIDTH4_SYNC_STAGE2_22
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+Vector_SYNC_DATA_WIDTH4_SYNC_STAGE2_23
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+Vector_SYNC_DATA_WIDTH4_SYNC_STAGE2_24
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+Vector_SYNC_DATA_WIDTH4_SYNC_STAGE2_25
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+Vector_SYNC_DATA_WIDTH4_SYNC_STAGE2_26
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+Vector_SYNC_DATA_WIDTH4_SYNC_STAGE2_27
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+Vector_SYNC_DATA_WIDTH4_SYNC_STAGE2_28
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+Vector_SYNC_DATA_WIDTH4_SYNC_STAGE2_29
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+Vector_SYNC_DATA_WIDTH4_SYNC_STAGE2_30
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+Vector_SYNC_DATA_WIDTH4_SYNC_STAGE2_31
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+Vector_SYNC_DATA_WIDTH4_SYNC_STAGE2_32
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+Vector_SYNC_DATA_WIDTH4_SYNC_STAGE2_33
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+Vector_SYNC_DATA_WIDTH4_SYNC_STAGE2_34
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+Vector_SYNC_DATA_WIDTH4_SYNC_STAGE2_35
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+Vector_SYNC_DATA_WIDTH4_SYNC_STAGE2_36
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+Vector_SYNC_DATA_WIDTH4_SYNC_STAGE2_37
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+Vector_SYNC_DATA_WIDTH4_SYNC_STAGE2_38
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+Vector_SYNC_DATA_WIDTH4_SYNC_STAGE2_39
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+Vector_SYNC_DATA_WIDTH4_SYNC_STAGE2_40
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+Vector_SYNC_DATA_WIDTH4_SYNC_STAGE2_41
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+Vector_SYNC_DATA_WIDTH4_SYNC_STAGE2_42
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+Vector_SYNC_DATA_WIDTH4_SYNC_STAGE2_43
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+Vector_SYNC_DATA_WIDTH4_SYNC_STAGE2_44
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+Vector_SYNC_DATA_WIDTH4_SYNC_STAGE2_45
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+Vector_SYNC_DATA_WIDTH4_SYNC_STAGE2_46
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+Vector_SYNC_DATA_WIDTH4_SYNC_STAGE2_47
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+Vector_SYNC_DATA_WIDTH4_SYNC_STAGE2_48
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+Vector_SYNC_DATA_WIDTH4_SYNC_STAGE2_49
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+Vector_SYNC_DATA_WIDTH4_SYNC_STAGE2_50
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+Vector_SYNC_DATA_WIDTH4_SYNC_STAGE2_51
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+Vector_SYNC_DATA_WIDTH4_SYNC_STAGE2_52
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+Vector_SYNC_DATA_WIDTH4_SYNC_STAGE2_53
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+Vector_SYNC_DATA_WIDTH4_SYNC_STAGE2_54
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+Vector_SYNC_DATA_WIDTH4_SYNC_STAGE2_55
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+Vector_SYNC_DATA_WIDTH4_SYNC_STAGE2_56
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+Vector_SYNC_DATA_WIDTH4_SYNC_STAGE2_57
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+Vector_SYNC_DATA_WIDTH4_SYNC_STAGE2_58
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+Vector_SYNC_DATA_WIDTH4_SYNC_STAGE2_59
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+Vector_SYNC_DATA_WIDTH4_SYNC_STAGE2_60
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+Vector_SYNC_DATA_WIDTH4_SYNC_STAGE2_61
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+Vector_SYNC_DATA_WIDTH4_SYNC_STAGE2_62
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+Vector_SYNC_DATA_WIDTH4_SYNC_STAGE2_63
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+Vector_SYNC_DATA_WIDTH4_SYNC_STAGE2_64
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+Vector_SYNC_DATA_WIDTH4_SYNC_STAGE2_65
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+Vector_SYNC_DATA_WIDTH4_SYNC_STAGE2_66
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+Vector_SYNC_DATA_WIDTH4_SYNC_STAGE2_67
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+Vector_SYNC_DATA_WIDTH4_SYNC_STAGE2_68
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+Vector_SYNC_DATA_WIDTH4_SYNC_STAGE2_69
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+Vector_SYNC_DATA_WIDTH4_SYNC_STAGE2_70
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+Vector_SYNC_DATA_WIDTH4_SYNC_STAGE2_71
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+Vector_SYNC_DATA_WIDTH4_SYNC_STAGE2_72
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+Vector_SYNC_DATA_WIDTH4_SYNC_STAGE2_73
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+Vector_SYNC_DATA_WIDTH4_SYNC_STAGE2_74
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+Vector_SYNC_DATA_WIDTH4_SYNC_STAGE2_75
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+Vector_SYNC_DATA_WIDTH4_SYNC_STAGE2_76
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+Vector_SYNC_DATA_WIDTH4_SYNC_STAGE2_77
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+Vector_SYNC_DATA_WIDTH4_SYNC_STAGE2_78
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+Vector_SYNC_DATA_WIDTH4_SYNC_STAGE2_79
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+Vector_SYNC_DATA_WIDTH4_SYNC_STAGE2_80
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+Vector_SYNC_DATA_WIDTH4_SYNC_STAGE2_81
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+Vector_SYNC_DATA_WIDTH4_SYNC_STAGE2_82
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+Vector_SYNC_DATA_WIDTH4_SYNC_STAGE2_83
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+Vector_SYNC_DATA_WIDTH4_SYNC_STAGE2_84
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+Vector_SYNC_DATA_WIDTH5_SYNC_STAGE2_0
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+Master_Read_0          enG5K             fsa0m_a_generic_core_ss1p62v125c
+Mux_0                  enG5K             fsa0m_a_generic_core_ss1p62v125c
+Mux_1                  enG5K             fsa0m_a_generic_core_ss1p62v125c
+Mux_2                  enG5K             fsa0m_a_generic_core_ss1p62v125c
+Mux_4                  enG5K             fsa0m_a_generic_core_ss1p62v125c
+Mux_5                  enG5K             fsa0m_a_generic_core_ss1p62v125c
+Mux_6                  enG5K             fsa0m_a_generic_core_ss1p62v125c
+Mux_3_0                enG5K             fsa0m_a_generic_core_ss1p62v125c
+data_array_wrapper_0   enG50K            fsa0m_a_generic_core_ss1p62v125c
+tag_array_wrapper_0    enG10K            fsa0m_a_generic_core_ss1p62v125c
+EPU_ALG_DW01_inc_0     enG5K             fsa0m_a_generic_core_ss1p62v125c
+EPU_ALG_DW01_inc_1     enG5K             fsa0m_a_generic_core_ss1p62v125c
+FF_SRAM_DW01_inc_0     enG5K             fsa0m_a_generic_core_ss1p62v125c
+FIFO_DW01_inc_0        enG5K             fsa0m_a_generic_core_ss1p62v125c
+FIFO_DW01_inc_1        enG5K             fsa0m_a_generic_core_ss1p62v125c
+DPCM_Cb_DW01_sub_0     enG5K             fsa0m_a_generic_core_ss1p62v125c
+DPCM_Cb_DW01_inc_0     enG5K             fsa0m_a_generic_core_ss1p62v125c
+DPCM_Cr_DW01_sub_0     enG5K             fsa0m_a_generic_core_ss1p62v125c
+DPCM_Cr_DW01_inc_0     enG5K             fsa0m_a_generic_core_ss1p62v125c
+DPCM_Y_DW01_sub_0      enG5K             fsa0m_a_generic_core_ss1p62v125c
+DPCM_Y_DW01_inc_0      enG5K             fsa0m_a_generic_core_ss1p62v125c
+RLE_N12_DW01_inc_0     enG5K             fsa0m_a_generic_core_ss1p62v125c
+RLE_N12_DW01_inc_1     enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_sub_2         enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_add_1         enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_sub_6         enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_sub_9         enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_add_7         enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_sub_13        enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_sub_16        enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_add_13        enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_sub_20        enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_sub_23        enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_add_19        enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_sub_27        enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_sub_30        enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_add_25        enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_sub_34        enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_sub_37        enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_add_31        enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_sub_41        enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_sub_44        enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_add_37        enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_sub_48        enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_sub_51        enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_add_43        enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_sub_55        enG5K             fsa0m_a_generic_core_ss1p62v125c
+ycrcb_mem_DW01_inc_0   enG5K             fsa0m_a_generic_core_ss1p62v125c
+DRAM_Wrapper_DW01_add_0
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DRAM_Wrapper_DW01_add_1
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+WDT_DW01_inc_0         enG5K             fsa0m_a_generic_core_ss1p62v125c
+Sensor_Wrapper_DW01_add_0
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+Master_Monitor_1_DW01_add_0
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+Master_Monitor_2_DW01_add_0
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+Master_Monitor_3_DW01_add_0
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+Master_Monitor_3_DW01_add_1
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DMA_controller_DW01_add_0
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DMA_controller_DW_cmp_0
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DMA_controller_DW01_add_1
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DMA_controller_DW01_add_2
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DMA_controller_DW01_add_3
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DMA_controller_DW01_add_4
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+CSR_DW01_sub_0         enG5K             fsa0m_a_generic_core_ss1p62v125c
+div_rill_N32_DW01_inc_0
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+div_rill_N32_DW_cmp_0  enG5K             fsa0m_a_generic_core_ss1p62v125c
+ALU_DW_cmp_0           enG5K             fsa0m_a_generic_core_ss1p62v125c
+Reg_PC_DW01_add_0      enG5K             fsa0m_a_generic_core_ss1p62v125c
+collect_bits_DW01_add_1
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+mul_matrix_Z14_DW_mult_tc_0
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+mul_matrix_Z14_DW_mult_tc_1
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+mul_matrix_Z14_DW_mult_tc_4
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+mul_matrix_Z14_DW_mult_tc_5
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+mul_matrix_Z14_DW_mult_tc_6
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+mul_matrix_Z14_DW_mult_tc_7
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+mul_matrix_Z14_DW_mult_tc_8
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+mul_matrix_Z14_DW_mult_tc_9
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+mul_matrix_Z14_DW_mult_tc_10
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+mul_matrix_Z14_DW_mult_tc_11
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+mul_matrix_Z14_DW_mult_tc_12
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+mul_matrix_Z14_DW_mult_tc_13
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+mul_matrix_Z14_DW_mult_tc_14
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+mul_matrix_Z14_DW_mult_tc_16
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+mul_matrix_Z14_DW_mult_tc_17
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+mul_matrix_Z14_DW_mult_tc_18
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+mul_matrix_Z14_DW_mult_tc_19
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+mul_matrix_Z14_DW_mult_tc_21
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+mul_matrix_Z14_DW_mult_tc_22
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+mul_matrix_Z14_DW_mult_tc_24
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+mul_matrix_Z14_DW_mult_tc_25
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+mul_matrix_Z14_DW_mult_tc_26
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+mul_matrix_Z14_DW_mult_tc_27
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+mul_matrix_Z14_DW_mult_tc_28
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+mul_matrix_Z14_DW_mult_tc_29
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+mul_matrix_Z14_DW_mult_tc_34
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+mul_matrix_Z14_DW_mult_tc_35
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+mul_matrix_Z14_DW_mult_tc_37
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+mul_matrix_Z14_DW_mult_tc_39
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+mul_matrix_Z14_DW_mult_tc_40
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+mul_matrix_Z14_DW_mult_tc_42
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+mul_matrix_Z14_DW_mult_tc_44
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+mul_matrix_Z14_DW_mult_tc_45
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+mul_matrix_Z14_DW_mult_tc_46
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+mul_matrix_Z14_DW_mult_tc_47
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+mul_matrix_Z14_DW_mult_tc_48
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+mul_matrix_Z14_DW_mult_tc_49
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+mul_matrix_Z14_DW_mult_tc_50
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+mul_matrix_Z14_DW_mult_tc_51
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+mul_matrix_Z14_DW_mult_tc_52
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+mul_matrix_Z14_DW_mult_tc_53
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+mul_matrix_Z14_DW_mult_tc_54
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+mul_matrix_Z14_DW_mult_tc_55
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+mul_matrix_Z14_DW_mult_tc_56
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+mul_matrix_Z14_DW_mult_tc_57
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+mul_matrix_Z14_DW_mult_tc_58
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+mul_matrix_Z14_DW_mult_tc_59
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+mul_matrix_Z14_DW_mult_tc_60
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+mul_matrix_Z14_DW_mult_tc_61
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+mul_matrix_Z14_DW_mult_tc_62
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+mul_matrix_Z14_DW_mult_tc_63
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+toYCrCb_data_num4_DW01_add_0
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+toYCrCb_data_num4_DW01_add_1
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+toYCrCb_data_num4_DW_mult_tc_0
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+toYCrCb_data_num4_DW_mult_tc_1
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+toYCrCb_data_num4_DW_mult_tc_2
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+toYCrCb_data_num4_DW01_add_2
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+toYCrCb_data_num4_DW01_add_3
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+toYCrCb_data_num4_DW_mult_tc_3
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+toYCrCb_data_num4_DW_mult_tc_4
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+toYCrCb_data_num4_DW_mult_tc_5
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+toYCrCb_data_num4_DW01_add_4
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+toYCrCb_data_num4_DW01_add_5
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+toYCrCb_data_num4_DW_mult_tc_6
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+toYCrCb_data_num4_DW_mult_tc_7
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+toYCrCb_data_num4_DW_mult_tc_8
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+toYCrCb_data_num4_DW01_add_6
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+toYCrCb_data_num4_DW01_add_7
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+toYCrCb_data_num4_DW_mult_tc_9
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+toYCrCb_data_num4_DW_mult_tc_10
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+toYCrCb_data_num4_DW_mult_tc_11
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+Sensor_Wrapper_DW01_add_1
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_add_72        enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_add_73        enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_add_74        enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_add_75        enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_add_76        enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_add_77        enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_add_78        enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_add_79        enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_add_80        enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_add_81        enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_add_82        enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_add_83        enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_add_84        enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_add_85        enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_add_86        enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_add_87        enG5K             fsa0m_a_generic_core_ss1p62v125c
+Master_Monitor_2_DW01_add_2
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+Master_Monitor_1_DW01_add_2
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+Mul_DW_mult_uns_1      enG10K            fsa0m_a_generic_core_ss1p62v125c
+BPU_DW01_add_1         enG5K             fsa0m_a_generic_core_ss1p62v125c
+ALU_DW01_sub_1         enG5K             fsa0m_a_generic_core_ss1p62v125c
+ALU_DW01_add_2         enG5K             fsa0m_a_generic_core_ss1p62v125c
+ALU_DW01_add_3         enG5K             fsa0m_a_generic_core_ss1p62v125c
+CSR_DW01_inc_2         enG5K             fsa0m_a_generic_core_ss1p62v125c
+CSR_DW01_inc_3         enG5K             fsa0m_a_generic_core_ss1p62v125c
+JB_Unit_DW01_add_1     enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_sub_136       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_sub_137       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_sub_138       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_sub_139       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_sub_140       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_sub_141       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_sub_142       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_sub_143       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_add_144       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_add_145       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_add_146       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_add_147       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_add_148       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_add_149       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_add_150       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_add_151       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_add_153       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_add_157       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_add_159       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_add_160       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_add_161       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_add_162       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_add_163       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_add_164       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_add_165       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_add_166       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_add_167       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_add_168       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_add_169       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_add_170       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_add_171       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_add_172       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_add_173       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_add_174       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_add_175       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_sub_160       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_sub_161       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_sub_162       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_sub_163       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_sub_164       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_sub_165       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_sub_166       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_sub_167       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_sub_168       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_sub_169       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_sub_170       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_sub_171       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_sub_172       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_sub_173       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_sub_174       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_sub_175       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_sub_176       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_sub_177       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_sub_178       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_sub_179       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_sub_180       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_sub_181       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_sub_182       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_sub_183       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_add_176       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_add_177       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_add_178       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_add_179       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_add_180       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_add_181       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_add_182       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_add_183       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_add_184       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_add_185       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_add_186       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_add_187       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_add_188       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_add_189       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_add_190       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_add_191       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_sub_184       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_sub_185       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_sub_186       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_sub_187       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_sub_188       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_sub_189       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_sub_190       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_sub_191       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_sub_192       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_sub_193       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_sub_194       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_sub_195       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_sub_196       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_sub_197       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_sub_198       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_sub_199       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_sub_200       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_sub_201       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_sub_202       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_sub_203       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_sub_204       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_sub_205       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_sub_206       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_sub_207       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_add_192       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_add_193       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_add_194       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_add_195       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_add_196       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_add_197       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_add_198       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_add_199       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_add_200       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_add_201       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_add_202       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_add_203       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_add_204       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_add_205       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_add_206       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_add_207       enG5K             fsa0m_a_generic_core_ss1p62v125c
+Master_Monitor_epu_DW01_add_2
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+Master_Monitor_epu_DW01_add_3
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+Master_Monitor_0_DW01_add_2
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+Master_Monitor_0_DW01_add_3
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_sub_224       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_sub_225       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_sub_226       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_sub_227       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_sub_228       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_sub_229       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_sub_230       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_sub_231       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_add_216       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_add_217       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_add_218       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_add_219       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_add_220       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_add_221       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_add_222       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_add_223       enG5K             fsa0m_a_generic_core_ss1p62v125c
+mul_matrix_Z14_DW_mult_tc_64
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+mul_matrix_Z14_DW_mult_tc_65
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+mul_matrix_Z14_DW_mult_tc_66
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+mul_matrix_Z14_DW_mult_tc_67
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+CPU_DW01_add_1         enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_sub_296       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_sub_297       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_sub_298       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_sub_299       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_sub_300       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_sub_301       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_sub_302       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_sub_303       enG5K             fsa0m_a_generic_core_ss1p62v125c
+mul_matrix_Z14_DW_mult_tc_126
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+mul_matrix_Z14_DW_mult_tc_127
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+mul_matrix_Z14_DW_mult_tc_143
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+mul_matrix_Z14_DW_mult_tc_146
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+mul_matrix_Z14_DW_mult_tc_149
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+mul_matrix_Z14_DW_mult_tc_150
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+mul_matrix_Z14_DW_mult_tc_151
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+mul_matrix_Z14_DW_mult_tc_162
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+mul_matrix_Z14_DW_mult_tc_171
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_add_304       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_add_305       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_add_306       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_add_307       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_add_308       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_add_309       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_add_310       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_add_311       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_sub_328       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_sub_329       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_sub_330       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_sub_331       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_sub_332       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_sub_333       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_sub_334       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_sub_335       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_sub_336       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_sub_337       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_sub_338       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_sub_339       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_sub_340       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_sub_341       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_sub_342       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_sub_343       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_add_312       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_add_313       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_add_314       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_add_315       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_add_316       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_add_317       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_add_318       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_add_319       enG5K             fsa0m_a_generic_core_ss1p62v125c
+AC_coe_table_DW01_inc_4
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+AC_coe_table_DW01_inc_5
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_sub_368       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_sub_369       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_sub_370       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_sub_371       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_sub_372       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_sub_373       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_sub_374       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_sub_375       enG5K             fsa0m_a_generic_core_ss1p62v125c
+div_rill_N32_DW01_sub_2
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_add_328       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_add_329       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_add_330       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_add_331       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DCT_DW01_add_332       enG5K             fsa0m_a_generic_core_ss1p62v125c
+div_rill_N32_DW01_inc_3
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+
+
+Global Operating Voltage = 1.62 
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+  Cell Internal Power  = 426.5028 mW   (99%)
+  Net Switching Power  =   4.8895 mW    (1%)
+                         ---------
+Total Dynamic Power    = 431.3923 mW  (100%)
+
+Cell Leakage Power     =   2.2618 mW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory           353.1345            0.1500        2.0381e+09          355.3226  (  81.94%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
+register          72.7606        9.1366e-02        9.3853e+07           72.9458  (  16.82%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational      0.6064            4.6481        1.2984e+08            5.3843  (   1.24%)
+--------------------------------------------------------------------------------------------------
+Total            426.5015 mW         4.8894 mW     2.2618e+09 pW       433.6527 mW
+1
